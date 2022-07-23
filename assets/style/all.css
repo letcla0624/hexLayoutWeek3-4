@@ -431,10 +431,6 @@ body {
   .design li {
     width: 50%;
     margin-top: 48px; }
-    .design li .double {
-      content: url("../images/home-section4-1.png"); }
-    .design li .youth {
-      content: url("../images/home-section4-2.png"); }
     .design li p {
       background-color: #fff;
       padding: 8px 0; }
