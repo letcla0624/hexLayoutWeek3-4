@@ -119,6 +119,9 @@ body {
 }
 .series {
   padding: 80px 0;
+  .h2 {
+    margin-bottom: 48px;
+  }
   li {
     width: 33.33333%;
     margin-right: 24px;
@@ -126,12 +129,12 @@ body {
       margin-right: 0;
     }
     img {
-      min-width: 282.66px;
-      min-height: 282.66px;
-      margin-top: 48px;
       margin-bottom: 8px;
     }
     p {
+      font-size: 48px;
+      line-height: 72px;
+      font-weight: 700;
       font-style: italic;
       font-family: "Roboto", sans-serif;
     }
@@ -183,12 +186,15 @@ body {
 .contact {
   padding: 80px 0;
   background-color: $skin;
+  .h2 {
+    margin-bottom: 48px;
+  }
   &-container {
     max-width: 636px;
     p {
       font-size: 20px;
       line-height: 30px;
-      margin: 48px 0 24px;
+      margin-bottom: 24px;
     }
     label {
       display: block;
@@ -558,6 +564,11 @@ select {
       }
     }
   }
+  .series {
+    li {
+      margin-bottom: 24px;
+    }
+  }
   .pro {
     li {
       margin: 0 12px 24px 12px;
@@ -714,10 +725,13 @@ select {
       width: 50%;
     }
   }
-  .series,
   .suggest {
     li {
       width: 100%;
+      margin: 12px 0;
+      &:last-child {
+        margin: 12px 0;
+      }
     }
   }
   .design {
@@ -733,12 +747,17 @@ select {
   }
   .series {
     li {
+      width: 100%;
       p {
         text-align: center;
       }
     }
   }
-  .pro h2,
+  .pro .h2,
+  .series .h2,
+  .design .h2,
+  .suggest .h2,
+  .contact .h2,
   .title-content .title,
   .title-content .subTitle,
   .store .title,
@@ -746,6 +765,7 @@ select {
   .blog-article .h2 {
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 24px;
   }
   .menuUl li a,
   .banner p,
