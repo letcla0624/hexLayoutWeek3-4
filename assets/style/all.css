@@ -410,17 +410,19 @@ body {
 
 .series {
   padding: 80px 0; }
+  .series .h2 {
+    margin-bottom: 48px; }
   .series li {
     width: 33.33333%;
     margin-right: 24px; }
     .series li:last-child {
       margin-right: 0; }
     .series li img {
-      min-width: 282.66px;
-      min-height: 282.66px;
-      margin-top: 48px;
       margin-bottom: 8px; }
     .series li p {
+      font-size: 48px;
+      line-height: 72px;
+      font-weight: 700;
       font-style: italic;
       font-family: "Roboto", sans-serif; }
 
@@ -463,12 +465,14 @@ body {
 .contact {
   padding: 80px 0;
   background-color: #fbf2f2; }
+  .contact .h2 {
+    margin-bottom: 48px; }
   .contact-container {
     max-width: 636px; }
     .contact-container p {
       font-size: 20px;
       line-height: 30px;
-      margin: 48px 0 24px; }
+      margin-bottom: 24px; }
     .contact-container label {
       display: block; }
     .contact-container input,
@@ -767,6 +771,8 @@ select {
     .pro li:last-child,
     .suggest li:last-child {
       margin: 0 auto; }
+  .series li {
+    margin-bottom: 24px; }
   .pro li {
     margin: 0 12px 24px 12px; }
   .suggest li {
@@ -868,25 +874,34 @@ select {
       line-height: 36px; }
   .pro li {
     width: 50%; }
-  .series li,
   .suggest li {
-    width: 100%; }
+    width: 100%;
+    margin: 12px 0; }
+    .suggest li:last-child {
+      margin: 12px 0; }
   .design {
     background: url("../images/index-bg-sm.png") center center no-repeat; }
     .design li .double {
       content: url("../images/home-section4-1-sm.png"); }
     .design li .youth {
       content: url("../images/home-section4-2-sm.png"); }
-  .series li p {
-    text-align: center; }
-  .pro h2,
+  .series li {
+    width: 100%; }
+    .series li p {
+      text-align: center; }
+  .pro .h2,
+  .series .h2,
+  .design .h2,
+  .suggest .h2,
+  .contact .h2,
   .title-content .title,
   .title-content .subTitle,
   .store .title,
   .blog .title,
   .blog-article .h2 {
     font-size: 24px;
-    line-height: 36px; }
+    line-height: 36px;
+    margin-bottom: 24px; }
   .menuUl li a,
   .banner p,
   .footer .contain p,
