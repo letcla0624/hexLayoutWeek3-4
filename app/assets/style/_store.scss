@@ -1,0 +1,89 @@
+.select-place {
+  margin-bottom: 40px;
+  span {
+    font-size: 24px;
+    line-height: 36px;
+    margin-right: 16px;
+  }
+}
+select {
+  padding: 6px 12px;
+  border-color: #ced4da;
+  font-size: 18px;
+  line-height: 26px;
+  &:selected {
+    color: #495057;
+  }
+}
+.store {
+  &-title,
+  &-contact {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 8px 24px;
+    border: 1px solid rgba($color: $black, $alpha: 0.2);
+  }
+  &-select {
+    min-width: 304px;
+  }
+  &-contact {
+    font-size: 20px;
+    line-height: 30px;
+    li {
+      margin-bottom: 8px;
+    }
+    span {
+      margin-right: 10px;
+    }
+  }
+  &-img {
+    width: 100%;
+    height: 224px;
+    overflow-y: hidden;
+    img {
+      object-fit: cover;
+    }
+  }
+  &-detail {
+    width: 41.5%;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  &-map {
+    width: 58.5%;
+    margin-left: 12px;
+  }
+}
+@include md {
+  .store {
+    &-contact {
+      min-height: 162px;
+    }
+  }
+}
+@include sm {
+  .select-place {
+    justify-content: space-between;
+    span {
+      margin-right: 8px;
+      white-space: nowrap;
+    }
+  }
+  .store {
+    &-contact {
+      min-height: 0px;
+    }
+    &-detail,
+    &-map {
+      width: 100%;
+      margin: 0 0 24px;
+      iframe {
+        min-height: 300px;
+      }
+    }
+    &-select {
+      width: 100%;
+      min-width: auto;
+    }
+  }
+}

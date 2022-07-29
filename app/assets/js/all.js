@@ -1,17 +1,23 @@
-const menuUl = document.querySelector(".menuUl");
+const menu = document.querySelector(".menu");
 const menuIcon = document.querySelector(".menu-icon");
-let openMenu;
+let openMenu = false;
 
+window.addEventListener("resize", reportWindowSize);
 menuIcon.addEventListener("click", () => {
   openMenu = !openMenu;
   if (openMenu) {
-    menuUl.classList.remove("d-sm-none");
+    menu.classList.remove("d-sm-none");
     menuIcon.innerText = "close";
   } else {
-    menuUl.classList.add("d-sm-none");
-    menuIcon.innerText = "menu";
+    reportWindowSize();
   }
 });
+
+function reportWindowSize() {
+  menu.classList.add("d-sm-none");
+  menuIcon.innerText = "menu";
+  openMenu = false;
+}
 
 const check = document.querySelector("#check");
 let ifCheck;

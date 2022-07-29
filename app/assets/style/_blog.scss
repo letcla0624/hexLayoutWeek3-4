@@ -1,0 +1,192 @@
+.blog {
+  &-card:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  &-card:last-child {
+    margin-bottom: 124px;
+  }
+  &-nav {
+    li:not(:last-child) {
+      margin-right: 48px;
+    }
+    a {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 13px 0;
+    }
+    .material-symbols-outlined {
+      font-size: 36px;
+      font-weight: 900;
+    }
+  }
+  &-img {
+    width: 48%;
+  }
+  &-title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  &-time {
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &-more {
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 900;
+    text-align: right;
+  }
+  &-tag {
+    margin-bottom: 8px;
+    li {
+      margin-right: 15px;
+    }
+  }
+  &-article {
+    width: 66%;
+    margin-right: 24px;
+    article {
+      margin-bottom: 40px;
+      font-family: "Noto Sans TC", sans-serif;
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 8px;
+      }
+    }
+  }
+  &-share {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #707070;
+    p {
+      margin-right: 16px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+    }
+  }
+  &-change {
+    width: 66%;
+    margin-bottom: 80px;
+  }
+  &-others {
+    margin-top: 24px;
+    .word {
+      margin: 0 8px;
+    }
+  }
+  &-tags {
+    width: 34%;
+    .title,
+    .material-symbols-outlined {
+      font-size: 32px;
+      line-height: 48px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .material-symbols-outlined {
+      font-size: 48px;
+      margin-right: 8px;
+    }
+    li {
+      margin-right: 24px;
+      margin-bottom: 4px;
+    }
+  }
+}
+.breadcrumbs {
+  margin: 24px 0 8px;
+  li {
+    line-height: 24px;
+    span {
+      margin: 0 4px;
+    }
+  }
+  li:not(:last-child) {
+    a {
+      color: $black;
+    }
+  }
+}
+@include md {
+  .blog {
+    &-title {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    &-time {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &-more {
+      display: none;
+    }
+    &-card:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    &-change {
+      width: 100%;
+    }
+  }
+}
+@include sm {
+  .blog {
+    &-nav {
+      ul {
+        overflow-x: scroll;
+      }
+      li {
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        a {
+          white-space: nowrap;
+        }
+      }
+      a {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &-card {
+      flex-direction: column;
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+      &:last-child {
+        margin-bottom: 64px;
+      }
+    }
+    &-img {
+      width: 100%;
+    }
+    &-content {
+      width: 100%;
+      margin-top: 8px;
+      p.text-gray {
+        display: none;
+      }
+    }
+    &-article {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 64px;
+      article {
+        margin-top: 16px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
