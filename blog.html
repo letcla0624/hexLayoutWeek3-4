@@ -13,26 +13,28 @@
 
 <body>
   <header class="header fixed-top bg-red">
-    <div class="container d-flex jcsb aic mx-auto">
-      <a href="index.html"><img src="./assets/images/logo-white.png" alt="logo" class="logo" /></a>
-      <span class="material-symbols-outlined menu-icon text-white">menu</span>
-      <ul class="d-flex aic d-sm-none">
+    <nav class="d-flex jcsb aic">
+      <div class="d-flex jcsb aic header-top">
+        <a href="index.html"><img src="./assets/images/logo-white.png" alt="logo" class="logo" /></a>
+        <span class="material-symbols-outlined menu-icon text-white">menu</span>
+      </div>
+      <ul class="d-flex aic menu d-sm-none">
         <li><a href="series_1.html" class="text-white">系列鏡框</a></li>
         <li><a href="store.html" class="text-white">門市據點</a></li>
         <li><a href="blog.html" class="text-white">部落格</a></li>
         <li><a href="qa.html" class="text-white">常見問題</a></li>
       </ul>
-    </div>
-    <ul class="d-flex flex-wrap menuUl bg-red d-sm-none">
+    </nav>
+    <!-- <ul class="d-flex flex-wrap menuUl bg-red d-sm-none">
       <li><a href="series_1.html" class="text-white">系列鏡框</a></li>
       <li><a href="store.html" class="text-white">門市據點</a></li>
       <li><a href="blog.html" class="text-white">部落格</a></li>
       <li><a href="qa.html" class="text-white">常見問題</a></li>
-    </ul>
+    </ul> -->
   </header>
 
   
-<div class="main">
+<main class="main">
   <div class="first-section bg-deep-red">
     <div class="container d-flex jcsb aic blog-nav d-sm-none">
       <ul class="d-flex">
@@ -47,8 +49,8 @@
   <section class="section blog">
     <div class="container">
       <h1 class="h2 mb-8 title title-border">部落格</h1>
-      <div>
-        <div class="d-flex jcsb blog-card">
+      <ul>
+        <li class="d-flex jcsb blog-card">
           <a href="blog_detail.html" class="blog-img">
             <img src="./assets/images/blog-1.png" alt="情人特別企劃">
           </a>
@@ -67,8 +69,8 @@
             </a>
             <a href="blog_detail.html" class="text-deep-red blog-more d-md-none">MORE</a>
           </div>
-        </div>
-        <div class="d-flex jcsb blog-card">
+        </li>
+        <li class="d-flex jcsb blog-card">
           <a href="blog_detail.html" class="blog-img">
             <img src="./assets/images/blog-2.png" alt="街頭潮人訪問">
           </a>
@@ -87,8 +89,8 @@
             </a>
             <a href="blog_detail.html" class="text-deep-red blog-more d-md-none">MORE</a>
           </div>
-        </div>
-        <div class="d-flex jcsb blog-card">
+        </li>
+        <li class="d-flex jcsb blog-card">
           <a href="blog_detail.html" class="blog-img">
             <img src="./assets/images/blog-3.png" alt="春季新品上市">
           </a>
@@ -107,8 +109,8 @@
             </a>
             <a href="blog_detail.html" class="text-deep-red blog-more d-md-none">MORE</a>
           </div>
-        </div>
-        <div class="d-flex jcsb blog-card">
+        </li>
+        <li class="d-flex jcsb blog-card">
           <a href="blog_detail.html" class="blog-img">
             <img src="./assets/images/blog-4.png" alt="設計師獨享鏡框優惠">
           </a>
@@ -127,8 +129,8 @@
             </a>
             <a href="blog_detail.html" class="text-deep-red blog-more d-md-none">MORE</a>
           </div>
-        </div>
-        <div class="d-flex jcsb blog-card">
+        </li>
+        <li class="d-flex jcsb blog-card">
           <a href="blog_detail.html" class="blog-img">
             <img src="./assets/images/blog-5.png" alt="抵抗夏日大作戰">
           </a>
@@ -147,8 +149,8 @@
             </a>
             <a href="blog_detail.html" class="text-deep-red blog-more d-md-none">MORE</a>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
       <div class="page">
         <ul class="d-flex jcc">
           <li class="prev"><a href="#">上一頁</a></li>
@@ -162,52 +164,35 @@
       </div>
     </div>
   </section>
-</div>
+</main>
 
     <footer class="footer bg-red">
       <div class="container mx-auto">
-        <div class="d-flex jcsb aic d-sm-none">
-          <ul class="nav d-flex aic">
-            <li><a href="index.html" class="text-white">首頁</a></li>
-            <li><a href="series_1.html" class="text-white">系列鏡框</a></li>
-            <li><a href="store.html" class="text-white">門市據點</a></li>
-            <li><a href="blog.html" class="text-white">部落格</a></li>
-            <li><a href="qa.html" class="text-white">常見問題</a></li>
-          </ul>
+        <div class="d-flex jcsb ais">
+          <div>
+            <ul class="nav d-flex aic d-sm-none">
+              <li><a href="index.html" class="text-white">首頁</a></li>
+              <li><a href="series_1.html" class="text-white">系列鏡框</a></li>
+              <li><a href="store.html" class="text-white">門市據點</a></li>
+              <li><a href="blog.html" class="text-white">部落格</a></li>
+              <li><a href="qa.html" class="text-white">常見問題</a></li>
+            </ul>
+            <ul class="contain">
+              <li>
+                <a href="tel:0800000000" class="text-white d-flex aic">
+                  <span class="material-symbols-outlined"> call </span>
+                  <p>0800-000-000</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:glasses@business.com" class="text-white d-flex aic">
+                  <span class="material-symbols-outlined"> mail </span>
+                  <p>glasses@business.com</p>
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul class="social-icon d-flex aic">
-            <li>
-              <a href="#">
-                <img src="./assets/images/ic-social-fb.png" alt="facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/ic_social_ig.png" alt="instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/ic_social_line.png" alt="line" />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="contain d-flex jcsb aib">
-          <ul>
-            <li>
-              <a href="tel:0800000000" class="text-white d-flex aic">
-                <span class="material-symbols-outlined"> call </span>
-                <p>0800-000-000</p>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:glasses@business.com" class="text-white d-flex aic">
-                <span class="material-symbols-outlined"> mail </span>
-                <p>glasses@business.com</p>
-              </a>
-            </li>
-          </ul>
-          <ul class="social-icon social-icon-min d-flex">
             <li>
               <a href="#">
                 <img src="./assets/images/ic-social-fb.png" alt="facebook" />

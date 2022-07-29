@@ -13,26 +13,28 @@
 
 <body>
   <header class="header fixed-top bg-red">
-    <div class="container d-flex jcsb aic mx-auto">
-      <a href="index.html"><img src="./assets/images/logo-white.png" alt="logo" class="logo" /></a>
-      <span class="material-symbols-outlined menu-icon text-white">menu</span>
-      <ul class="d-flex aic d-sm-none">
+    <nav class="d-flex jcsb aic">
+      <div class="d-flex jcsb aic header-top">
+        <a href="index.html"><img src="./assets/images/logo-white.png" alt="logo" class="logo" /></a>
+        <span class="material-symbols-outlined menu-icon text-white">menu</span>
+      </div>
+      <ul class="d-flex aic menu d-sm-none">
         <li><a href="series_1.html" class="text-white">系列鏡框</a></li>
         <li><a href="store.html" class="text-white">門市據點</a></li>
         <li><a href="blog.html" class="text-white">部落格</a></li>
         <li><a href="qa.html" class="text-white">常見問題</a></li>
       </ul>
-    </div>
-    <ul class="d-flex flex-wrap menuUl bg-red d-sm-none">
+    </nav>
+    <!-- <ul class="d-flex flex-wrap menuUl bg-red d-sm-none">
       <li><a href="series_1.html" class="text-white">系列鏡框</a></li>
       <li><a href="store.html" class="text-white">門市據點</a></li>
       <li><a href="blog.html" class="text-white">部落格</a></li>
       <li><a href="qa.html" class="text-white">常見問題</a></li>
-    </ul>
+    </ul> -->
   </header>
 
   
-<div class="main">
+<main class="main">
   <section class="banner first-section">
     <div class="container h-100">
       <div class="d-flex fdc jcc aie text-deep-red h-100">
@@ -47,12 +49,12 @@
       <h2 class="h2 text-deep-red">用專業的心，做專業的事</h2>
       <ul class="d-flex jcc flex-md-wrap">
         <li>
-          <img src="./assets/images/home-section2-1.png" alt="單一價格" />
+          <span class="material-symbols-outlined text-deep-red text-100">paid</span>
           <h3 class="h3 text-deep-red">單一價格</h3>
           <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
         </li>
         <li>
-          <img src="./assets/images/home-section2-2.png" alt="20 分鐘即可取件" />
+          <span class="material-symbols-outlined text-deep-red text-100">schedule</span>
           <h3 class="h3 text-deep-red">20 分鐘即可取件</h3>
           <p>
             為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
@@ -60,7 +62,7 @@
           </p>
         </li>
         <li>
-          <img src="./assets/images/home-section2-3.png" alt="安心售後服務" />
+          <span class="material-symbols-outlined text-deep-red text-100">favorite</span>
           <h3 class="h3 text-deep-red">安心售後服務</h3>
           <p>
             我們提供長達 120
@@ -68,7 +70,7 @@
           </p>
         </li>
         <li>
-          <img src="./assets/images/home-sectioin2-4.png" alt="關於鏡片" />
+          <span class="material-symbols-outlined text-deep-red text-100">voicemail</span>
           <h3 class="h3 text-deep-red">關於鏡片</h3>
           <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
         </li>
@@ -126,7 +128,7 @@
         <li>
           <img src="./assets/images/home-section5-1.png" alt="Jessy">
           <div class="text-content">
-            <b>Jessy</b>
+            <h3 class="fw-bold">Jessy</h3>
             <p>眼鏡品質優良，下次還會想來這邊購買！</p>
             <small>2021/06/20</small>
           </div>
@@ -134,7 +136,7 @@
         <li>
           <img src="./assets/images/home-section5-2.png" alt="凱倫">
           <div class="text-content">
-            <b>凱倫</b>
+            <h3 class="fw-bold">凱倫</h3>
             <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
             <small>2021/04/18</small>
           </div>
@@ -142,7 +144,7 @@
         <li>
           <img src="./assets/images/home-section5-3.png" alt="悠悠">
           <div class="text-content">
-            <b>悠悠</b>
+            <h3 class="fw-bold">悠悠</h3>
             <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
             <small>2020/12/25</small>
           </div>
@@ -150,7 +152,7 @@
         <li>
           <img src="./assets/images/home-section5-4.png" alt="Kyuan">
           <div class="text-content">
-            <b>Kyuan</b>
+            <h3 class="fw-bold">Kyuan</h3>
             <p>服務很好，品質沒有任何問題，非常喜歡。</p>
             <small>2020/10/31</small>
           </div>
@@ -185,57 +187,40 @@
           </label>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-red btn-submit">確認送出</button>
+          <input type="submit" value="確認送出" class="btn btn-red btn-submit">
         </div>
       </form>
     </div>
   </section>
-</div>
+</main>
 
     <footer class="footer bg-red">
       <div class="container mx-auto">
-        <div class="d-flex jcsb aic d-sm-none">
-          <ul class="nav d-flex aic">
-            <li><a href="index.html" class="text-white">首頁</a></li>
-            <li><a href="series_1.html" class="text-white">系列鏡框</a></li>
-            <li><a href="store.html" class="text-white">門市據點</a></li>
-            <li><a href="blog.html" class="text-white">部落格</a></li>
-            <li><a href="qa.html" class="text-white">常見問題</a></li>
-          </ul>
+        <div class="d-flex jcsb ais">
+          <div>
+            <ul class="nav d-flex aic d-sm-none">
+              <li><a href="index.html" class="text-white">首頁</a></li>
+              <li><a href="series_1.html" class="text-white">系列鏡框</a></li>
+              <li><a href="store.html" class="text-white">門市據點</a></li>
+              <li><a href="blog.html" class="text-white">部落格</a></li>
+              <li><a href="qa.html" class="text-white">常見問題</a></li>
+            </ul>
+            <ul class="contain">
+              <li>
+                <a href="tel:0800000000" class="text-white d-flex aic">
+                  <span class="material-symbols-outlined"> call </span>
+                  <p>0800-000-000</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:glasses@business.com" class="text-white d-flex aic">
+                  <span class="material-symbols-outlined"> mail </span>
+                  <p>glasses@business.com</p>
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul class="social-icon d-flex aic">
-            <li>
-              <a href="#">
-                <img src="./assets/images/ic-social-fb.png" alt="facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/ic_social_ig.png" alt="instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/images/ic_social_line.png" alt="line" />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="contain d-flex jcsb aib">
-          <ul>
-            <li>
-              <a href="tel:0800000000" class="text-white d-flex aic">
-                <span class="material-symbols-outlined"> call </span>
-                <p>0800-000-000</p>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:glasses@business.com" class="text-white d-flex aic">
-                <span class="material-symbols-outlined"> mail </span>
-                <p>glasses@business.com</p>
-              </a>
-            </li>
-          </ul>
-          <ul class="social-icon social-icon-min d-flex">
             <li>
               <a href="#">
                 <img src="./assets/images/ic-social-fb.png" alt="facebook" />
